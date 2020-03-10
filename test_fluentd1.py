@@ -1,10 +1,10 @@
 #from flask import Flask, render_template, jsonify, request
 from datetime import datetime
-import joblib
-import pandas as pd
+#import joblib
+#import pandas as pd
 #import decision_tree
-import os
-from fluent import sender, event
+#import os
+from fluent import sender#, event
 
 #TENANT = os.getenv('TENANT', 'local')
 FLUENTD_HOST = '13.74.145.30' #'localhost' #os.getenv('FLUENTD_HOST')
