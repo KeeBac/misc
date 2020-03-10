@@ -1,7 +1,7 @@
 import mlflow
 import os
 
-MLFLOW_TRACKING_URL = os.getenv('MLFLOW_TRACKING_URL') #'http://13.79.158.10:5000'
+MLFLOW_TRACKING_URL = 'http://13.74.145.30:5000' #os.getenv('MLFLOW_TRACKING_URL')
 TENANT = os.getenv('TENANT','local')
 RUN_LABEL = os.getenv('GO_PIPELINE_LABEL', '0')
 USE_MLFLOW = MLFLOW_TRACKING_URL is not None
