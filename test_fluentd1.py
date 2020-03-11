@@ -7,7 +7,7 @@ from datetime import datetime
 from fluent import sender#, event
 
 #TENANT = os.getenv('TENANT', 'local')
-FLUENTD_HOST = '13.74.145.30' #'localhost' #os.getenv('FLUENTD_HOST')
+FLUENTD_HOST = 'localhost' #os.getenv('FLUENTD_HOST')
 FLUENTD_PORT = 24224 #8888 #os.getenv('FLUENTD_PORT')
 
 products = {
