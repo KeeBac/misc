@@ -11,11 +11,9 @@ RUN mkdir -p /test_url \
   && pip install --no-cache-dir --no-compile -r reqs_fluentd.txt \
   && conda list && conda clean -tipy
 
-#  && python test_fluentd1.py
-
-#RUN chmod +x /test_url/test.sh
+RUN chmod +x /test_url/test.sh
 
 #CMD ["echo 'DONE'"]
-#CMD ["/test_url/test.sh"]
-CMD ["python", "/test_url/decision_tree.py"]
+CMD ["/test_url/test.sh"]
+#CMD ["python", "/test_url/decision_tree.py"]
 
