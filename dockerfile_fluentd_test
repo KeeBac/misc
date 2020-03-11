@@ -1,0 +1,21 @@
+FROM continuumio/miniconda3:4.7.12-alpine
+
+USER root
+
+ENV PATH=$PATH:/opt/conda/bin
+
+RUN mkdir -p /test_url \
+  && apk --no-cache add git nano bash \
+  && git clone https://github.com/KeeBac/misc.git /test_url \
+  && cd /test_url \
+  && pip install --no-cache-dir --no-compile -r reqs_fluentd.txt \
+  && conda list && conda clean -tipy
+
+#  && python test_fluentd1.py
+
+#RUN chmod +x /test_url/test.sh
+
+#CMD ["echo 'DONE'"]
+#CMD ["/test_url/test.sh"]
+CMD ["python", "/test_url/decision_tree.py"]
+
