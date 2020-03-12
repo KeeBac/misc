@@ -13,6 +13,7 @@ RUN mkdir -p /test_url \
   && conda list && conda clean -tipy
 
 RUN chmod +x /test_url/test.sh
+RUN chmod +x /test_url/test_arg.sh
 
 #CMD ["echo 'DONE'"]
 #CMD ["/test_url/test.sh"]
